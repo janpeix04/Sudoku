@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "pythonturtle"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/32/b1/2267c041fd484f864c575d69ebac593bb511d2f91d14dfaea24e63203025/PythonTurtle-0.3.2.tar.gz", hash = "sha256:bd5628ab23a73189ec1cb9effbddf2f9fb43613ee9c971cf0954700b202d8534", size = 513879, upload-time = "2020-09-24T23:39:42.273Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5e/df/b83ffcf5626d59af2247d257cb252996df0559f2e07bec3de1bad9a619f0/PythonTurtle-0.3.2-py3-none-any.whl", hash = "sha256:255d1912c79e34c47e93684e915ea74c584d38bc94637c16a161212ce332b6b5", size = 518363, upload-time = "2020-09-24T23:39:40.472Z" },
+]
+
+[[package]]
+name = "sudoku"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "pythonturtle" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pythonturtle", specifier = ">=0.3.2" }]
